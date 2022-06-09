@@ -7,7 +7,7 @@ function Navbar() {
       <nav className='navbar navbar-dark bg-dark navar-expand-sm'>
           <div className='container'>
               <Link to='/' className="navbar-brand">
-                  <i className='fa fa-mobile text-warning fa-2x px-3'/>Contact <span className='text-warning'>Manager</span>
+              <h4><i className='fa fa-address-book text-warning  px-3'/>My <span className='text-warning'>ContactBook</span></h4>
               </Link>
           </div>
       </nav>

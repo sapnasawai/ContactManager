@@ -87,9 +87,9 @@ const ContactList = () => {
           <div className='grid'>
             <div className='row'>
               <div className='col'>
-                <p className='h3 fw-bold'>Contact Manger  
-                    <Link to='/contacts/add' className="btn btn-primary ms-2">
-                     <span className='fa fa-user-plus'></span>
+                <p className='h3 fw-bold'>Contact Manager  
+                    <Link to='/contacts/add' className="btn btn-primary ms-4">
+                     <span className='fa fa-user-plus pe-2'></span>
                      New
                     </Link>
                 </p>
@@ -128,14 +128,14 @@ const ContactList = () => {
             filteredContacts.length > 0 &&
                filteredContacts.map(contact => {
                  return (
-                  <div className='col-md-6' key={contact.id}>
-                  <div className='card my-2'>
-                    <div className='card-body'>
+                  <div className='col-lg-6' key={contact.id}>
+                  <div className='card my-2 '>
+                    <div className='card-body '>
                        <div className='row align-items-center d-flex justify-content-around'>
-                         <div className='col-md-4'>
-                           <img src={contact.photo} className='container-img'/>
+                         <div className='col-md-5 '>
+                           <img src={contact.photo} className='container-img img-fluid ' />
                          </div>
-                         <div className='col-md-7 '>
+                         <div className='col-md-6 '>
                            <ul className='list-group'>
                              <li className='list-group-item list-group-item-action'>
                                Name : <span className='fw-bold'>{contact.name}</span>
@@ -148,7 +148,7 @@ const ContactList = () => {
                              </li>
                            </ul>
                          </div>
-                         <div className='col-md-1 d-flex flex-column align-items-center'>
+                         <div className='col-md-1 d-flex  align-items-center flex-lg-column flex-md-column justify-content-lg-center'>
                          <Link to={`/contacts/view/${contact.id}`} className="btn btn-warning my-1">
                             <i className='fa fa-eye '/>
                           </Link>
