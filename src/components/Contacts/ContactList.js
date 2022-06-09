@@ -133,7 +133,7 @@ const ContactList = () => {
                     <div className='card-body '>
                        <div className='row align-items-center d-flex justify-content-around'>
                          <div className='col-md-5 '>
-                           <img src={contact.photo} className='container-img img-fluid ' />
+                           <img src={contact.photo} className='container-img img-fluid 'alt='User Images'/>
                          </div>
                          <div className='col-md-6 '>
                            <ul className='list-group'>
